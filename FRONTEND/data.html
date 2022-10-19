@@ -51,7 +51,6 @@
     <!---------------------------------header------------------------------------->
 
     <div class="container mt-5">
-      
       <!--bienvenida -->
       <div class="row">
         <div class="col-sm-5 text-center">
@@ -74,32 +73,122 @@
             se adeacue a tus nececidades.
           </p>
         </div>
-      
       </div>
+
+      <!--datos pacientes-->
 
       <div class="row mt-5">
         <div class="col">
-          <div class="card" style="width: 18rem;">
-          <img src="img/cruz-2831364_1280.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Paciente</h5>
-            <p class="card-text">Estos sin tus datos personales sino comcuerdan porfavor comunicate con soporte.</p>
+          <div class="card" style="width: 18rem">
+            <img
+              src="img/cruz-2831364_1280.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paciente</h5>
+              <p class="card-text">
+                Estos sin tus datos personales sino comcuerdan porfavor
+                comunicate con soporte.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">nombre</li>
+              <li class="list-group-item">apellido1</li>
+              <li class="list-group-item">apellido2</li>
+              <li class="list-group-item">cedula</li>
+              <li class="list-group-item">email</li>
+              <li class="list-group-item">direccion</li>
+            </ul>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">nombre</li>
-            <li class="list-group-item">apellido1</li>
-            <li class="list-group-item">apellido2</li>
-            <li class="list-group-item">cedula</li>
-            <li class="list-group-item">email</li>
-            <li class="list-group-item">direccion</li>
-          </ul>
         </div>
-      </div>
-        <div class="col"></div>
-        <div class="col"></div>
-      </div>
+
+        <!------------------datos citas paciente---------------------->
+
+        <div class="col">
+          <h2>Citas</h2>
+          <table class="table">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Cita</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Cancelar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Ginecologo</td>
+                <td>13/03/2022</td>
+                <td>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Ortopeda</td>
+                <td>10/05/2022</td>
+                <td>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Endocrino</td>
+                <td>8/06/2022</td>
+                <td>
+                  <button type="button" class="btn btn-danger">Cancelar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!------------------datos formulas paciente------------------>
+
+        <div class="col">
+          <h2>Formulas</h2>
+          <table class="table">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Cita</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Cancelar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Ginecologo</td>
+                <td>13/03/2022</td>
+                <td>
+                  <button type="button" class="btn btn-info">Consultar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Ortopeda</td>
+                <td>10/05/2022</td>
+                <td>
+                  <button type="button" class="btn btn-info">Consultar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Endocrino</td>
+                <td>8/06/2022</td>
+                <td>
+                  <button type="button" class="btn btn-info">Consultar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
 
+      </div>
     </div>
 
     <script
