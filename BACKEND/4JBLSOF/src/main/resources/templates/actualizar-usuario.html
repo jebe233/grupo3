@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="" />
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+	crossorigin="anonymous" />
+<title>4JBL sof DATA</title>
+</head>
+<body>
+	<!--nav bar-->
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"></a> <img
+				src="img/cruz-2831364_1280.png" alt="logo" width="35" height="29"
+				class="d-inline-block align-text-top" /> &nbsp &nbsp
+			<h3>4JBL sof</h3>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+					<a class="nav-link" href="#">Quienes somos</a> <a class="nav-link"
+						href="#">Contactenos</a>
+					<!--<a class="nav-link disabled">Disabled</a>-->
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!---------------------------------header------------------------------------->
+
+	<div class="container mt-5">
+		<!--bienvenida -->
+		<div class="row">
+			<div class="col-sm-5 text-center">
+				<figure class="figure">
+					<img src="img/doctor-4187242_1920.jpg"
+						class="figure-img img-fluid rounded" alt="..." />
+					<figcaption class="figure-caption">Cuentanos Estamos
+						Para Ayudarte.</figcaption>
+				</figure>
+			</div>
+			<div class="col-7">
+				<h2>HOLA!</h2>
+				<p>¡Hola! Bienvenido/a a nuestra plataforma. En esta sección
+					podrás agregar y consultar usuarios ten cuidado</p>
+				<br />
+				<h3>Consulta Usuarios</h3>
+				<br>
+				<!--
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Agendar Cita</button>
+            <button type="button" class="btn btn-primary">Consulatar Cita</button>
+            <button type="button" class="btn btn-primary">Consultar Formula</button>
+            <button type="button" class="btn btn-primary">Datos Personales</button>
+          </div>
+            -->
+			</div>
+		</div>
+
+		<!--datos pacientes-->
+		<div class="row mt-5">
+			<div class="col-6">
+
+				<form th:action="@{/usuario/actualizar/{id} (id = ${usuario.id})}" method="post">
+					<div class="mb-3">
+						<label for="nombre" class="form-label">Nombre</label> 
+						<input type="text" class="form-control" id="nombre" th:field="${usuario.nombre}">
+					</div>
+					<div class="mb-3">
+						<label for="apellido" class="form-label">Apellido</label> 
+						<input type="text" class="form-control" id="apellido" th:field="${usuario.apellido}">
+					</div>
+					<div class="mb-3">
+						<label for="cargo" class="form-label">Cargo</label> 
+						<input type="text" class="form-control" id="cargo" th:field="${usuario.cargo}">
+					</div>
+					<div class="mb-3">
+						<label for="direccion" class="form-label">Direccion</label> 
+						<input type="text" class="form-control" id="direccion" th:field="${usuario.direccion}">
+					</div>
+					<div class="mb-3">
+    					<label for="exampleInputEmail1" class="form-label">Email address</label>
+    					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" th:field="${usuario.email}">
+    					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  						</div>
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label">Password</label>
+						<input type="text" class="form-control" id="exampleInputPassword1" th:field="${usuario.pass}">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="col-sm-5 text-center">
+				<figure class="figure">
+					<img src="img/doctor-1650291_1280_50-porciento.png"
+						class="figure-img img-fluid rounded" alt="..." />
+					<figcaption class="figure-caption">Cuentanos Estamos
+						Para Ayudarte.</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<!------------------datos citas paciente---------------------->
+
+		<!------------------datos formulas paciente------------------>
+
+		<!--crear cita-->
+	</div>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+</body>
+</html>
