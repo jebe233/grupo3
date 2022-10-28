@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>si se</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <img
+          src="img/cruz-2831364_1280.png"
+          alt="logo"
+          width="35"
+          height="29"
+          class="d-inline-block align-text-top"
+        />
+        &nbsp &nbsp
+        <h3>4JBL sof</h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#">Quienes somos</a>
+            <a class="nav-link" href="#">Contactenos</a>
+            <!--<a class="nav-link disabled">Disabled</a>-->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!---------------------------------header------------------------------------->
+
+    <div class="container mt-5">
+      <!--bienvenida -->
+      <div class="row">
+        <div class="col-sm-5 text-center">
+          <figure class="figure">
+            <img
+              src="img/doctora-4861811_1920.jpg"
+              class="figure-img img-fluid rounded"
+              alt="..."
+            />
+            <figcaption class="figure-caption">
+              Cuentanos Estamos Para Ayudarte.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-7">
+          <h2>HOLA!</h2>
+          <p>
+            ¡Hola! Bienvenido/a a nuestra plataforma. En esta sección podrás ver tus datos, consultar tus fórmulas y tomar una cita para el día que más se adapte a tus necesidades. Toma tu cita con nosotros. Asignación de citas.
+          </p>
+          <br />
+          <h3>Tus citas disponibles con nosotros</h3>
+          <br>
+
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <a class="btn btn-primary" href="/">Regresar</a>
+            <a class="btn btn-primary" href="#">Consulta Formulas</a>
+          
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Agendar Cita
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li><a class="dropdown-item" href="#">Pediatra</a></li>
+                <li><a class="dropdown-item" href="#">Endocrino</a></li>
+                <li><a class="dropdown-item" href="#">Ginecologo</a></li>
+                <li><a class="dropdown-item" href="registrar.html">General</a></li>
+                <li><a class="dropdown-item" href="#">Gastro Enterologo</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-------------------------tabla de valores-------------------------->
+
+          <div class="row mt-5">
+        
+            <div class="col">
+              <h2>Datos Personales</h2>
+
+              <table class="table table-bordered " id="dataTable" width="100%" cellspacing="0">
+                <thead class="table-primary">
+                  <tr>
+                    <th scope="col">Doctor</th>
+                    <th scope="col">Especialidad</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Aciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!--espacio para citas-->
+                </tbody>
+              </table>
+            </div>
+        </div>
+
+       <!---------------------------------------------------------------------------------------------------------->
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!--<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <!--tablacita-->
+    <script src="js/cita.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
